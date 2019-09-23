@@ -1,0 +1,16 @@
+{
+  "name": "test",
+  "private": true,
+  "workspaces": {
+    "workspaces": [
+      "packages/**"
+    ],
+    "nohoist": []
+  },
+  "scripts": {
+    "build": "lerna run build"
+  },
+  "devDependencies": {
+    "lerna": "3.16.2"
+  }
+}

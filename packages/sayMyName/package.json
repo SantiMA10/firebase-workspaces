@@ -1,0 +1,22 @@
+{
+  "name": "@santima10/say-my-name",
+  "version": "1.0.0",
+  "main": "build/src/index.js",
+  "typings": "build/src/index.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "compile": "tsc",
+    "compile:types": "tsc --declaration true",
+    "build": "yarn compile && yarn compile:types",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^3.6.3",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.1.0",
+    "@types/jest": "^24.0.18",
+    "@types/node": "^12.7.5"
+  }
+}
