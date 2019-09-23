@@ -1,0 +1,11 @@
+{
+  "functions": {
+    "source": "packages/functions",
+    "ignore": [
+      "firebase.json",
+      ".firebaserc",
+      ".firebase/**",
+      "**/node_modules/**"
+    ]
+  }
+}

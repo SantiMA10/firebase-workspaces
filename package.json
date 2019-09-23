@@ -1,14 +1,21 @@
 {
-  "name": "test",
+  "name": "@santima10/test",
   "private": true,
   "workspaces": {
-    "workspaces": [
+    "packages": [
       "packages/**"
     ],
-    "nohoist": []
+    "nohoist": [
+      "**/firebase-admin",
+      "**/firebase-admin/**",
+      "**/firebase-functions",
+      "**/firebase-functions/**"
+    ]
   },
   "scripts": {
-    "build": "lerna run build"
+    "build": "lerna run build",
+    "publish:registry": "lerna run publish:registry",
+    "deploy": "lerna run deploy"
   },
   "devDependencies": {
     "lerna": "3.16.2"

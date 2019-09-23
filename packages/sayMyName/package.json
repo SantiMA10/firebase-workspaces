@@ -1,15 +1,23 @@
 {
   "name": "@santima10/say-my-name",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "build/src/index.js",
   "typings": "build/src/index.d.ts",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com/SantiMA10/firebase-workspaces.git"
+  },
   "scripts": {
     "compile": "tsc",
     "compile:types": "tsc --declaration true",
     "build": "yarn compile && yarn compile:types",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "publish:registry": "yarn publish"
+  },
+  "engines": {
+    "node": "10"
   },
   "dependencies": {},
   "devDependencies": {
